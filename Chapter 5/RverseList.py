@@ -5,4 +5,4 @@ def reverseList(j):
     else:
         return reverseList(j[1:]) + j[0]
 
-print(reverseList("hello"))
+print(reverseList("Joseph"))
