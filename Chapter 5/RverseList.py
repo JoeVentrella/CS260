@@ -1,7 +1,8 @@
-def reverseList(s):
-    if len(s) <= 1:
-        return s[0]
+def reverseList(j):
+    """Funcction that takes a list and reverses it"""
+    if len(j) <= 1:
+        return j[0]
     else:
-        return reverseList(s[1:]) + s[0]
+        return reverseList(j[1:]) + j[0]
 
 print(reverseList("hello"))

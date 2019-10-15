@@ -3,16 +3,16 @@ import time
 def readInput():
 
     while True:
-        num = input("Input number to calculate fibonacci of:  ")
-        num = num.strip()
-        if not num.isdigit():
+        number = input("Input number to calculate fibonacci of:  ")
+        number = number.strip()
+        if not number.isdigit():
             print ("Bad input, enter integer")
             continue
-        num = int(num)
-        if num < 0:
+        number = int(number)
+        if number < 0:
             print ("Bad do not input negative integers")
             continue
-        return num
+        return number
 
 
 def fibonacci_iterative(num):
@@ -40,20 +40,20 @@ def fibonacci_recursive(num):
 
 def main():
 
-    num = readInput()
+    number = readInput()
     # lets first calculate fibonacci iteratively
     start = time.time()
-    result = fibonacci_iterative(num)
+    result = fibonacci_iterative(number)
     end = time.time()
     print("Fibonacci number %d is: %d in time(iterative): %f" %
-          (num, result, round((end - start), 5)))
+          (number, result, round((end - start), 5)))
 
     # now calculate fibonacci recursively
     start = time.time()
-    result = fibonacci_recursive(num)
+    result = fibonacci_recursive(number)
     end = time.time()
     print("Fibonacci number %d is: %d in time(recursively): %f" %
-          (num, result, round((end - start), 5)))
+          (number, result, round((end - start), 5)))
 
 
 if __name__ == '__main__':

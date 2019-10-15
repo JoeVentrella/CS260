@@ -1,4 +1,4 @@
-def factorialRec(num):
+def factorialRecursive(num):
     """
     :param num: Takes an int
     :return: The factorial of the int input
@@ -6,7 +6,7 @@ def factorialRec(num):
     if num <= 1:
         return 1
 
-    return num * factorialRec(num - 1)
+    return num * factorialRecursive(num - 1)
 
 
 def readInput():
@@ -28,7 +28,7 @@ def readInput():
 
 def main():
     num = readInput()
-    fact = factorialRec(num)
+    fact = factorialRecursive(num)
     print("Factorial of %d is: %d" % (num, fact))
 
 
