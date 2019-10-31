@@ -15,15 +15,4 @@ class Queue:
     def size(self):
         return len(self.items)
 
-qu = Queue()
-print(qu.isEmpty())
-qu.enqueue(8)
-qu.enqueue('Joe')
-qu.enqueue(True)
-print(qu.size())
-print(qu.isEmpty())
-qu.enqueue(2.4)
-print(qu.dequeue())
-print(qu.dequeue())
-print(qu.size())
 
