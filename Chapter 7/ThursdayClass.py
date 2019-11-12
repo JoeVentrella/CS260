@@ -1,11 +1,3 @@
-# Bradley N. Miller, David L. Ranum
-
-# Introduction to Data Structures and Algorithms in Python
-
-# Copyright 2005
-
-#
-
 import unittest
 
 
