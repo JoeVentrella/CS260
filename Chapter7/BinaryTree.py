@@ -33,12 +33,20 @@ class BinaryTree:
         return self.key
 
 
-simpleTree = BinaryTree('a')
-print(simpleTree.getRootVal())
-print(simpleTree.getLeftChild())
-simpleTree.insertLeft('b')
-print(simpleTree.getLeftChild())
-print(simpleTree.getLeftChild().getRootVal())
-simpleTree.insertRight('c')
-simpleTree.getRightChild().setRootVal('hi')
-print(simpleTree.getRightChild().getRootVal())
+"""
+Is there A More EFFICIENT way to access nodes lower down the tree???
+"""
+"""
+ttree = BinaryTree('a')
+ttree.insertLeft('b')
+ttree.insertRight('c')
+ttree.getLeftChild().insertRight('d')
+ttree.getRightChild().insertLeft('e')
+ttree.getRightChild().insertRight('f')
+print(ttree.getRootVal())
+print(ttree.getLeftChild().getRootVal())
+print(ttree.getRightChild().getRootVal())
+print(ttree.getLeftChild().getRightChild().getRootVal())
+print(ttree.getRightChild().getLeftChild().getRootVal())
+print(ttree.getRightChild().getRightChild().getRootVal())
+"""
